@@ -3,6 +3,8 @@ import axios from 'axios';
 export async function shortenUrl(longUrl) {
     const apiUrl = import.meta.env.VITE_API_URL;
 
+    console.log('API URL:', apiUrl);
+
     try {
         const encodedUrl = encodeURI(longUrl.trim());
 
